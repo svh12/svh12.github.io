@@ -7,9 +7,9 @@ date: 2017-09-11
 I was trying to write a function that would return an array of prime numbers. My original code was verbose, so I searched for something more readable. I came across this one-liner and wanted to understand it better by breaking it down. I will be explaining the following one-liner:
 <br>
 
-```swift
-let primeNumbers = [Int](2...20).filter({num in [Int](1...Int(sqrt(Float(num)))).filter({num % $0 == 0}).count == 1})
-```
+{% gist 7bb3061ce7d62ab007a9aecf654ec6e5 %}
+
+<script src="https://gist.github.com/svh12/7bb3061ce7d62ab007a9aecf654ec6e5.js"></script>
 
 <br>
 This one-liner uses the ```count``` and ```filter``` methods. The count method returns the number of elements in an array. The filter method returns a new array that contains only the elements that meet the specified condtions. To break down the one-liner, I will explain the code using traditional for-in loops and if statements. Each count or filter method represents a for-in loop, so prepare to see three for-in loops throughout this code breakdown.
