@@ -41,3 +41,10 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+body .gist {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    width: 100%
+}
