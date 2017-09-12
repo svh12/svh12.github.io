@@ -42,7 +42,7 @@ ul.posts li {
     list-style: none;
 }
 
-body .gist {
+.gist {
     font-size: 20px;
     line-height: 18px;
     margin-bottom: 20px;
