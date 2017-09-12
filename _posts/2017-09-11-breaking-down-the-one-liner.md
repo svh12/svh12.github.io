@@ -7,7 +7,9 @@ date: 2017-09-11
 I was trying to write a function that would return an array of prime numbers. My original code was verbose, so I searched for something more readable. I came across this one-liner and wanted to understand it better by breaking it down. I will be explaining the following one-liner:
 <br>
 <br>
+```swift
 let primeNumbers = &#91;Int&#93;(2...20).filter({num in &#91;Int&#93;(1...Int(sqrt(Float(num)))).filter({num % $0 == 0}).count == 1})
+```
 <br>
 <br>
 This one-liner uses the count and filter methods. The count method returns the number of elements in an array. The filter method returns a new array that contains only the elements that meet the specified condtions.
